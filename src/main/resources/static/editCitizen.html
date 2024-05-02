@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Kunderegister</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="editCitizen.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+<h1>All citizens</h1>
+<div id="/getAllCitizens" class="table table-striped table-bordered"></div>
+
+<div id="wrongEdit" style="color: red"></div>
+<a class="btn btn-primary" onclick="getAllCitizens();return false">Get all citizens</a>
+<a class="btn btn-primary" onclick="deleteCitizensUnderEighteen();return false">Delete citizens younger than 18 years old</a>
+<a class="btn btn-primary" onclick="logOut()">Log out</a>
+</body>
+</html>

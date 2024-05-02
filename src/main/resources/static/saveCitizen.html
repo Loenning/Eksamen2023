@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Obligatorisk innlevering 1 i Webprogrammering - Data1700">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eksamen 2023</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<form>
+    <h1>Exam UI</h1>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="firstName">Name:</lable>
+                    <input type="text" class="form-control" id="firstName" onchange="validateName()">
+                </div>
+            <td id="wrongName" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="surname">Surname:</lable>
+                    <input type="text" class="form-control" id="surname" onchange="validateSurname()">
+                </div>
+            <td id="wrongSurname" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="dateOfBirth">Date of birth:</lable>
+                    <input type="" class="form-control" id="dateOfBirth" onchange="validateDateOfBirth()">
+                </div>
+            <td id="wrongDateOfBirth" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="ssn">Social Security Number:</label>
+                    <input type="number" class="form-control" id="ssn" onchange="validateSSN()">
+                </div>
+            <td id="wrongSSN" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="phoneNumber">Phone Number:</lable>
+                    <input type="number" class="form-control" id="phoneNumber" onchange="validatePhoneNumber()">
+                </div>
+            <td id="wrongPhoneNumber" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="email">Email Address:</lable>
+                    <input type="email" class="form-control" id="email" onchange="validateEmail()">
+                </div>
+            <td id="wrongEmail" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="city">City:</lable>
+                    <input type="text" class="form-control" id="city" onchange="validateCity()">
+                </div>
+            <td id="wrongCity" style="color:red;"></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <lable for="street">Street:</lable>
+                    <input type="text" class="form-control" id="street" onchange="validateStreet()">
+                </div>
+            <td id="wrongStreet" style="color:red;"></td>
+        </tr>
+    </table>
+    <button class="btn btn-success" onclick="validateAndRegister()" type="button">
+        Save
+    </button>
+
+    <button type="button" onclick="autoFillIn();return false" id="autoFillButton">Auto Fill</button>
+
+    <a class="btn btn-primary" href="/index.html">Go back</a>
+</form>
+
+</body>
+</html>
