@@ -45,7 +45,7 @@ public class CitizenRepository {
             List<User> users = db.query(userSQL, new BeanPropertyRowMapper(User.class), username);
 
             if(users != null) {
-                if (checkPassword(password, users.get(0).getPassword()));{
+                if (checkPassword(password, users.get(0).getPassword())){
                     return true;
                 }
             }
