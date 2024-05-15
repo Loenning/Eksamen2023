@@ -1,44 +1,55 @@
 package com.example.eksamen2023;
 
 public class Citizen {
-    private String firstName;
-    private String surname;
+    private Long cid;
+    private String firstname;
+    private String lastname;
     private String dateOfBirth;
-    private Long ssn;
-    private Integer phoneNumber;
+    private String ssn;
+    private String phoneNo;
     private String email;
     private String city;
     private String street;
 
-    public Citizen(){
 
-    }
-
-    public Citizen(String firstName, String surname, String dateOfBirth, Long ssn, Integer phoneNumber, String email, String city, String street) {
-        this.firstName = firstName;
-        this.surname = surname;
+    public Citizen(Long cid, String firstname, String lastname, String dateOfBirth, String ssn, String phoneNo, String email, String city, String street) {
+        this.cid = cid;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.dateOfBirth = dateOfBirth;
         this.ssn = ssn;
-        this.phoneNumber = phoneNumber;
+        this.phoneNo = phoneNo;
         this.email = email;
         this.city = city;
         this.street = street;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public Citizen() {
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+
+    public Long getCid() {
+        return cid;
     }
 
-    public String getSurname() {
-        return surname;
+    public void setCid(Long cid) {
+        this.cid = cid;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getDateOfBirth() {
@@ -49,20 +60,20 @@ public class Citizen {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Long getSsn() {
+    public String getSsn() {
         return ssn;
     }
 
-    public void setSsn(Long ssn) {
+    public void setSsn(String ssn) {
         this.ssn = ssn;
     }
 
-    public Integer getPhoneNumber() {
-        return phoneNumber;
+    public String getPhoneNo() {
+        return phoneNo;
     }
 
-    public void setPhoneNumber(Integer phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
     public String getEmail() {
@@ -92,11 +103,12 @@ public class Citizen {
     @Override
     public String toString() {
         return "Citizen{" +
-                "name='" + firstName + '\'' +
-                ", surname='" + surname + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", ssn=" + ssn +
-                ", phoneNumber=" + phoneNumber +
+                "cid=" + cid +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", dateofbirth='" + dateOfBirth + '\'' +
+                ", ssn='" + ssn + '\'' +
+                ", phoneNo='" + phoneNo + '\'' +
                 ", email='" + email + '\'' +
                 ", city='" + city + '\'' +
                 ", street='" + street + '\'' +

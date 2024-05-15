@@ -1,26 +1,25 @@
 package com.example.eksamen2023;
 
 public class User {
-    private Long id;
+    private String userid;
     private String username;
     private String password;
 
     public User() {
-
     }
 
-    public User(Long id, String username, String password) {
-        this.id = id;
+    public User(String userid, String username, String password) {
+        this.userid = userid;
         this.username = username;
         this.password = password;
     }
 
-    public Long getId() {
-        return id;
+    public String getUserid() {
+        return userid;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
     public String getUsername() {
@@ -42,7 +41,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "userid='" + userid + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
