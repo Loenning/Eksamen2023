@@ -1,5 +1,7 @@
 package com.example.eksamen2023;
 
+import java.time.LocalDate;
+
 public class Citizen {
     private Long cid;
     private String firstname;

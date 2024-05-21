@@ -2,8 +2,8 @@ drop table if exists citizens;
 CREATE TABLE citizens
 (
     cid         INTEGER AUTO_INCREMENT NOT NULL,
-    firstName   VARCHAR(50)  NOT NULL,
-    lastName     VARCHAR(50)  NOT NULL,
+    firstname   VARCHAR(50)  NOT NULL,
+    lastname     VARCHAR(50)  NOT NULL,
     dateOfBirth VARCHAR(50)   NOT NULL,
     ssn         VARCHAR(50) NOT NULL,
     phoneNumber VARCHAR(20)  NOT NULL,
